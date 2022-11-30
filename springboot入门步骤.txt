@@ -1,0 +1,35 @@
+1 导入jar包
+   1.1 在springboot-parent中导入spring-boot-stater-parent
+   <parent>
+           <groupId>org.springframework.boot</groupId>
+           <artifactId>spring-boot-starter-parent</artifactId>
+           <version>2.0.5.RELEASE</version>
+       </parent>
+   1.2 在springboot-01-hello中导入对于web支持的一个包
+   <dependency>
+       <groupId>org.springframework.boot</groupId>
+       <artifactId>spring-boot-starter-web</artifactId>
+   </dependency>
+2 写启动类
+@SpringBootApplication
+public class HelloAppStart {
+
+    public static void main(String[] args) {
+        SpringApplication.run(HelloAppStart.class,args);
+    }
+
+}
+3 配置文件 application.properties
+server.port=8081 # 修改端口号
+=====================到这一步为止,springboot项目就已经搭建好了============================
+4 写一个controller测试
+@Controller
+public class HelloController {
+
+    @RequestMapping("/hello")
+    @ResponseBody
+    public String hello(){
+        return "hello springboot!!";
+    }
+
+}

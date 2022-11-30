@@ -1,0 +1,32 @@
+# 选择环境
+spring:
+  profiles:
+    active: dev
+
+---
+
+# 开发环境
+server:
+  port: 8081
+spring:
+  profiles: dev
+  application:
+    name: springboot-03-mutiEnvConfig-dev
+
+---
+# 测试环境
+server:
+  port: 8082
+spring:
+  profiles: test
+  application:
+    name: springboot-03-mutiEnvConfig-test
+
+---
+# 线上环境
+server:
+  port: 8083
+spring:
+  profiles: pro
+  application:
+    name: springboot-03-mutiEnvConfig-pro

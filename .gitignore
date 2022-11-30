@@ -1,0 +1,4 @@
+# Project exclude paths
+/springboot-01-hello/target/
+/springboot-02-config/target/
+/springboot-03-mutiEnvConfig/target/
