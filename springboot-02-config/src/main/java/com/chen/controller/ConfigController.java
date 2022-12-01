@@ -1,5 +1,6 @@
 package com.chen.controller;
 
+import com.chen.domain.Employees;
 import com.chen.domain.JdbcProperties;
 import com.chen.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,8 +8,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import java.util.List;
 
 @Controller
 public class ConfigController {
@@ -24,24 +23,6 @@ public class ConfigController {
 
     @Autowired
     private JdbcProperties jdbcProperties;
-
-    @Value("person")
-    private List<Object> person;
-
-    public List<Object> getPerson() {
-        return person;
-    }
-
-    public void setPerson(List<Object> person) {
-        this.person = person;
-    }
-
-    @Override
-    public String toString() {
-        return "ConfigController{" +
-                "person=" + person +
-                '}';
-    }
 
     @ResponseBody
     @RequestMapping("/config")
@@ -61,10 +42,14 @@ public class ConfigController {
         return jdbcProperties;
     }
 
+
+    @Autowired
+    private Employees employees;
+
     @ResponseBody
     @RequestMapping("/config3")
-    public List<Object> config3() {
-        return person;
+    public Employees config3() {
+        return employees;
     }
 
 }

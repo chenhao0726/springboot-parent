@@ -18,6 +18,12 @@
         <module>springboot-01-hello</module>
         <module>springboot-02-config</module>
         <module>springboot-03-mutiEnvConfig</module>
+        <module>springboot-04-test</module>
+        <module>springboot-05-lombok</module>
+        <module>springboot-06-webthymeleaf</module>
+        <module>springboot-07-mybatis</module>
+        <module>springboot-08-mutimodulemybatis</module>
+        <module>springboot-09-transactionnal</module>
     </modules>
 
     <properties>

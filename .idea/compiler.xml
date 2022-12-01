@@ -2,13 +2,20 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="springboot-03-mutiEnvConfig" />
         <module name="springboot-01-hello" />
         <module name="springboot-02-config" />
-        <module name="springboot-03-mutiEnvConfig" />
+        <module name="springboot-08-mutimodulemybatis" />
+        <module name="springboot-05-lombok" />
+        <module name="springboot-09-transactionnal" />
+        <module name="springboot-04-test" />
+        <module name="springboot-06-webthymeleaf" />
+        <module name="springboot-07-mybatis" />
       </profile>
     </annotationProcessing>
   </component>
@@ -17,6 +24,12 @@
       <module name="springboot-01-hello" options="-parameters" />
       <module name="springboot-02-config" options="-parameters" />
       <module name="springboot-03-mutiEnvConfig" options="-parameters" />
+      <module name="springboot-04-test" options="-parameters" />
+      <module name="springboot-05-lombok" options="-parameters" />
+      <module name="springboot-06-webthymeleaf" options="-parameters" />
+      <module name="springboot-07-mybatis" options="-parameters" />
+      <module name="springboot-08-mutimodulemybatis" options="-parameters" />
+      <module name="springboot-09-transactionnal" options="-parameters" />
     </option>
   </component>
 </project>

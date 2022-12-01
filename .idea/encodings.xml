@@ -4,5 +4,11 @@
     <file url="file://$PROJECT_DIR$/springboot-01-hello/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-02-config/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-03-mutiEnvConfig/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-04-test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-05-lombok/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-06-webthymeleaf/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-07-mybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-08-mutimodulemybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-09-transactionnal/src/main/java" charset="UTF-8" />
   </component>
 </project>

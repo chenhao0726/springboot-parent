@@ -4,8 +4,18 @@ user:
   age: 23
 
 person:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
+  - username: Tom
+    password: 123456
+    age: 21
+  - username: Jack
+    password: 1234
+    age: 2
+
+employee:
+  person:
+    - username: Tom
+      password: 123456
+      age: 21
+    - username: Jack
+      password: 1234
+      age: 2
